@@ -1,15 +1,20 @@
 # Start of the project
 
-**NPM installation**
-- run `npm init -y`
-
-**stylelint**
+### NPM installation
+```
+npm init -y
+```
+***
+### stylelint
 - install extention stylelint for VSCode
 - install stylelint package
-- run `npm install --save-dev stylelint stylelint-config-standard stylelint-config-idiomatic-order stylelint-webpack-plugin`
+
+```
+npm install --save-dev stylelint stylelint-config-standard stylelint-config-idiomatic-order stylelint-webpack-plugin
+```
+
 - add .stylelintrc file
 - add webpack plugin to your config
-
 ```javascript
 const StylelintPlugin = require('stylelint-webpack-plugin');
 module.exports = {
@@ -18,5 +23,8 @@ module.exports = {
   // ...
 };
 ```
+- add npm script
 
-- add npm script `"stylelint "**/*.{css,scss}" --fix"`
+```json
+"stylelint": "stylelint \"**/*.{css,scss}\" --fix"
+```
