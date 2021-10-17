@@ -120,6 +120,11 @@ add compiler options to .tsconfig.json
 ```json
 "compilerOptions": {
   "jsx": "react",
+  // aliases
+  "baseUrl": ".",
+  "paths": {
+    "@components/*": ["components/*"],
+  }
 }
 ```
 ***
